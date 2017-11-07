@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as ReactDom from 'react-dom';
+import {LoginPage} from "./pages/LoginPage";
 
 /**
  *
@@ -21,7 +22,7 @@ class App extends React.Component {
     }
 
     render(): JSX.Element | any | any {
-        return <div>halo</div>
+        return <div><LoginPage/></div>
     }
 }
 

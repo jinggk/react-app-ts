@@ -4,18 +4,19 @@
   "description": "",
   "scripts": {
     "test": "test",
-    "start": "webpack-dev-server --open"
+    "build": "webpack --config ./webpack/webpack.prod.ts ",
+    "start": "webpack-dev-server --config ./webpack/webpack.dev.ts --open"
   },
   "author": "vidy",
   "license": "ISC",
   "dependencies": {
-    "@types/html-webpack-plugin": "^2.28.0",
     "antd": "^2.13.9",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0"
   },
   "devDependencies": {
+    "@types/html-webpack-plugin": "^2.28.0",
     "@types/node": "^8.0.49",
     "@types/react": "^15.6.6",
     "@types/react-dom": "^16.0.2",
@@ -23,11 +24,14 @@
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.7",
     "ejs-loader": "^0.3.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "react-router": "^4.2.0",
     "source-map-loader": "^0.2.1",
+    "style-loader": "^0.19.0",
+    "ts-import-plugin": "^1.4.2",
     "ts-loader": "^3.1.1",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.1",
