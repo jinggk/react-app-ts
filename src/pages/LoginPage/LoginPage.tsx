@@ -29,6 +29,7 @@ class LoginForm extends React.Component <FormComponentProps, object> {
     render() {
         const {getFieldDecorator} = this.props.form;
         return (
+            <div className={'login-page'}>
             <Form onSubmit={this.handleSubmit} className="login-form">
                 <FormItem>
                     {getFieldDecorator('userName', {
@@ -59,6 +60,7 @@ class LoginForm extends React.Component <FormComponentProps, object> {
                     Or <a href="">注册!</a>
                 </FormItem>
             </Form>
+            </div>
         );
     }
 }

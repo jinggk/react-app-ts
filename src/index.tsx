@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDom from 'react-dom';
-import {LoginPage} from "./pages/LoginPage";
-
+import {LoginPage} from "./pages/LoginPage/LoginPage";
+import './style/index.less';
 /**
  *
  * @author vidy[Of2732号]

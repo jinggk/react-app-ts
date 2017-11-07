@@ -6,7 +6,7 @@
  *
  */
 
-import  WebpackBaseConfig  from './webpack.base';
+import WebpackBaseConfig  from './webpack.base';
 import {Configuration} from "webpack";
 const HtmlCleanWebpackPlg = require('clean-webpack-plugin');
 
