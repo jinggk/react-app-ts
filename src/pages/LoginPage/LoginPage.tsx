@@ -9,12 +9,16 @@ import * as React from 'react';
 import {FormEvent, Props} from "react";
 import {Form, Icon, Input, Button, Checkbox} from 'antd';
 import {FormComponentProps} from "antd/lib/form/Form";
+import { RouteComponentProps} from "react-router";
 
 const FormItem = Form.Item;
+export interface LoginPageProps extends Props<any> , FormComponentProps , RouteComponentProps<any>{
 
-class LoginForm extends React.Component <FormComponentProps, object> {
-    constructor(Props: FormComponentProps) {
-        super(Props);
+}
+class LoginForm extends React.Component <LoginPageProps, object> {
+    constructor(prop: LoginPageProps) {
+        super(prop);
+        console.log(prop.match)
     }
 
     handleSubmit = (e: FormEvent<any>) => {
