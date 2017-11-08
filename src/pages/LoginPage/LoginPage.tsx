@@ -40,7 +40,7 @@ class LoginForm extends React.Component <FormComponentProps, object> {
                 </FormItem>
                 <FormItem>
                     {getFieldDecorator('password', {
-                        rules: [{required: true, message: '请输入密码!'}],
+                        rules: [{required: true, message: '请输入密码 !'}],
                     })(
                         <Input prefix={<Icon type="lock" style={{fontSize: 13}}/>} type="password"
                                placeholder="密码"/>

@@ -2,6 +2,7 @@ import * as React from "react";
 import * as ReactDom from 'react-dom';
 import {LoginPage} from "./pages/LoginPage/LoginPage";
 import './style/index.less';
+import {MapPage} from "./pages/MapPage/MapPage";
 /**
  *
  * @author vidy[Of2732号]
@@ -22,7 +23,7 @@ class App extends React.Component {
     }
 
     render(): JSX.Element | any | any {
-        return <div><LoginPage/></div>
+        return <div><MapPage/></div>
     }
 }
 

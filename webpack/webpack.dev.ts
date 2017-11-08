@@ -19,6 +19,7 @@ const WebpackDevConfig = {
             port: 7777,
             disableHostCheck: true
         }
+
     }
 } as Configuration;
 export default WebpackDevConfig;
