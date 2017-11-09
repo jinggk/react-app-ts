@@ -8,6 +8,7 @@ import {
     Route,
     Link
 } from 'react-router-dom'
+import {SideNav} from "./components/SIdeNav";
 /**
  *
  * @author vidy[Of2732号]
@@ -30,13 +31,14 @@ class App extends React.Component {
     render(): JSX.Element | any | any {
         return <BrowserRouter>
             <div className={'app'}>
-                <ul className={'nav'}>
-                    <li><Link to='/'>登陆</Link></li>
-                    <li><Link to='/map'>地图</Link></li>
-                </ul>
+                <SideNav/>
+                {/*<ul className={'nav'}>*/}
+                    {/*<li><Link to='/login'>登陆</Link></li>*/}
+                    {/*<li><Link to='/map'>地图</Link></li>*/}
+                {/*</ul>*/}
                 <div className={'routes-container'}>
-                    <Route exact path='/' component={LoginPage}/>
-                    <Route path='/map' component={MapPage}/>
+                    <Route path='/login' component={LoginPage}/>
+                    <Route  exact path='/map' component={MapPage}/>
                 </div>
 
             </div>

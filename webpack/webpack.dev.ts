@@ -17,7 +17,8 @@ const WebpackDevConfig = {
         devtool: "source-map",
         devServer: {
             port: 7777,
-            disableHostCheck: true
+            disableHostCheck: true,
+            historyApiFallback: true,
         }
 
     }

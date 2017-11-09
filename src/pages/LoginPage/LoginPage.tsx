@@ -12,9 +12,7 @@ import {FormComponentProps} from "antd/lib/form/Form";
 import { RouteComponentProps} from "react-router";
 
 const FormItem = Form.Item;
-export interface LoginPageProps extends Props<any> , FormComponentProps , RouteComponentProps<any>{
-
-}
+interface LoginPageProps extends Props<any> , FormComponentProps , RouteComponentProps<any>{}
 class LoginForm extends React.Component <LoginPageProps, object> {
     constructor(prop: LoginPageProps) {
         super(prop);
